@@ -3,49 +3,25 @@
 /////////////////////////////////////////////////////////
 
 // Setup
-$iconsizes: 16,20,24,32,40,44,50,60,70,80,100,126,150!default;
-$icons:
-	sort,
-	close,
-	loading,
-	date,
-	star-active,
-	divider,
-	select-active,
-	menu,
-	heart,
-	share,
-	tag,
-	warning,
-	search,
-	trash,
-	checkmark,
-	more-detail,
-	info,
-	copy,
-	location,
-	required,
-	heart-solid,
-	error,
-	select,
-	star-action,
-	star-inactive
-;
-$socials:
-	instagram,
-	slack,
-	googleplus,
-	youtube,
-	facebook,
-	twitter,
-	linkedin,
-	dribbble
-;
+$iconsizes: 16,24,32,40,44,50,60,70,80,100,128,150!default;
+$iconcolors: (
+    black: $black,
+	white: #ffffff
+) !default;
+$iconfoldersolid: "solid";
+$iconfoldersocial: "social"; 
+
+
 
 // Icon Defaults
-//// Icons can be overidden with background colors: e.g .bg-primary
-.icon {display: inline-block;background:$primary;}
+.icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 .icon-block {display: block;}
+
+// Rotate modifiers
 .icon-rotate-90 {
 	-ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -68,21 +44,8 @@ $socials:
 	.icon-#{$iconsize} {
 		width: #{$iconsize}px;
 		height: #{$iconsize}px;
+		background-size: #{$iconsize}px #{$iconsize}px;
 	} 
 }
 
-
-// Generate icons
-//// Uses CSS3 Masks, needs a fallback for IE+Edge
-@each $icon in $icons {
-	.icon-#{$icon} {
-		-webkit-mask:  url(/img/icon/solid/#{$icon}.svg) 100% 100%/100% 100% no-repeat;
-		mask: url(/img/icon/solid/#{$icon}.svg) 100% 100%/100% 100% no-repeat;
-	}
-}
-@each $social in $socials {
-	.icon-#{$social} {
-		-webkit-mask: url(/img/icon/social/#{$social}.svg) 100% 100%/100% 100% no-repeat;
-		mask: url(/img/icon/social/#{$social}.svg) 100% 100%/100% 100% no-repeat;
-	}
-}
+// define icons below
