@@ -10,6 +10,8 @@ $black: #000000!default;
 $darkgrey: #9B9B9B!default;
 $lightgrey: #EEEEEE!default;
 $white: #FFFFFF!default;
+$main: #f66a75!default;
+$sub: #0e3757!default;
 //// States
 $error: #D0021B!default;
 $warning: #F5A623!default;
@@ -49,7 +51,9 @@ $colors: (
 	youtube: $youtube,
 	dribbble: $dribbble,
 	bodycolor: $bodycolor,
-	headingcolor: $headingcolor
+	headingcolor: $headingcolor,
+	main: $main,
+	sub: $sub
 ) !default;
 
 
