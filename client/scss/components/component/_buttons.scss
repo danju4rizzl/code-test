@@ -159,9 +159,10 @@ button[disabled],
 .btn-main {
 	@include defaltBtn();
 	max-height: 2.5rem;
-	max-width: 6rem;
+	max-width: 7rem;
 	border: 1px solid ;
 	background: $main;
+	padding: 1.5rem;
 	
 	&>* {
 		position: absolute;
