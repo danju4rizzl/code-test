@@ -9,7 +9,9 @@
 	"twitter": "wearedamage",
 	"nav_link_1": "Menu Link Again",
 	"nav_link_2": "Menu Link See",
-	"nav_link_3": "Menu Link"
+	"nav_link_3": "Menu Link",
+	"copyrights": "Code Test - All right reserved"
+	
 
 
 }

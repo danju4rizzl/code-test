@@ -1,4 +1,4 @@
-<section class="contact">
+<section class="contact mb-80">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 d-flex justify-content-center">
@@ -14,7 +14,7 @@
 		</div>
 		<div class="row justify-content-around">
 			<div class="col-sm-6">
-				<form action="submit">
+				<form method="GET" autocomplete="on">
 					<div class="input-group">
 						<label for="name" class="fc-sub mx-10 text-capitalize">Your Name</label>
 						<input type="text" name="name" id="name" placeholder="Please enter your name" required
@@ -23,12 +23,12 @@
 					<div class="input-group">
 						<label for="tell" class="fc-sub mx-10 text-capitalize">Your telephone number</label>
 						<input type="tel" name="tell" id="tell" placeholder="800-123-456" required>
-						<span class="state-message sub" class="my-30">ERROR!!!</span>
+						<span class="state-message error">...</span>
 					</div>
 					<div class="input-group">
 						<label for="email" class="fc-sub mx-10 text-capitalize">Your Email</label>
 						<input type="email" name="email" id="email" placeholder="Please enter your email" required>
-						<span class="state-message error" class="my-30">ERROR!!!</span>
+						<span class="state-message error">Error: Please enter a valid email</span>
 					</div>
 					<div class="input-group">
 						<label for="message" class="fc-sub mx-10 ">Your Message</label>
@@ -37,9 +37,9 @@
 					</div>
 					<small class="fc-sub">Please enter as much as possible</small>
 					<div class="d-flex justify-content-end">
-						<a href="#" class="btn mx-30 btn-main btn-main--sub bg-sub text-capitalize ">
-							<span>call now</span>
-						</a>
+						<button type="submit" class="btn mx-30 btn-main btn-main--sub bg-sub text-capitalize ">
+							<span>Submit</span>
+						</button>
 					</div>
 				</form>
 			</div>
