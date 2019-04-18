@@ -1,15 +1,18 @@
-	<hr class="mt-40 mb-40"/>
+	<div class="bg-sub">
 
-	<footer class="container mt-40 mb-40">
-		<div class="row align-items-center">
-			<div class="col-md-5 text-center text-md-left">
-				<p class="mb-0">&copy; {{year}} {{company_name}} Env:<!-- @if NODE_ENV='prod' -->Prod<!-- @endif --><!-- @if NODE_ENV='dev' -->Dev<!-- @endif --></p>
+		<footer class="container px-10">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-md-5 text-center text-md-left ">
+					<p class="mb-0 fc-white fw-400">&copy;
+						{{year}}
+						<a href="https://wearedamage.com/" target="_blank" rel="noopener"
+							class="fc-main">{{company_name}}</a>
+						{{copyrights}}
+					</p>
+				</div>
+				<div class="col-md-2 justify-content-center mx-20">
+					<a class="logo secondary" href="https://wearedamage.com/" target="_blank" rel="noopener">{{company_name}}</a>
+				</div>
 			</div>
-			<div class="col-md-2 justify-content-center">
-				<a class="logo emblem" href="/">{{company_name}}</a>
-			</div>
-			<div class="col-md-5 text-center text-md-right">
-				<p class="mb-0">Built by: <a href="https://wearedamage.com" target="_blank" rel="noopener">Damage</a></p>
-			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
