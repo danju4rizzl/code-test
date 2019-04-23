@@ -22,3 +22,14 @@ $(function(){
     });
     
 });
+$(document).ready(function(){
+    $(".navigation_toggle").click(function(){
+        $(".navigation_toggle").toggleClass("change");
+        $("#root").toggleClass(".navigation_open");
+        
+                
+    // console.log('working')
+    });
+    });
+
+      
