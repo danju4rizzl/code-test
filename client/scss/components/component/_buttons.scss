@@ -145,7 +145,7 @@ button[disabled],
 }
 
 // Btn Main
-@mixin defaltBtn {
+.btn-main {
 	position: relative;
 	overflow: hidden;
 	display: flex;
@@ -153,27 +153,26 @@ button[disabled],
 	height: 100%;
 	align-items: center;
 	justify-content: center;
-	border: none!important;
-}
-
-.btn-main {
-	@include defaltBtn();
+	border: none !important;
 	max-height: 2.5rem;
-	max-width: 7rem;
-	border: 1px solid ;
+	max-width: 8rem;
+	border: 1px solid;
 	background: $main;
 	padding: 1.5rem;
-	
-	&>* {
+
+	&>span {
 		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
-	
+
 	&::before {
 		content: "";
 		transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 		position: absolute;
 		top: 0px;
-		left: 40%;
+		left: 50%;
 		right: 0px;
 		bottom: 0px;
 		width: 70%;
@@ -185,5 +184,11 @@ button[disabled],
 		&::before {
 			transform: translateX(100%);
 		}
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.btn-main {
+		padding: 1.5rem 8rem;
 	}
 }
